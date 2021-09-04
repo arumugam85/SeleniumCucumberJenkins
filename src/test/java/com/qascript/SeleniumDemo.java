@@ -20,11 +20,15 @@ public class SeleniumDemo {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(chromeOptions);
 		driver.manage().window().maximize();
+		System.out.println("Launch Browser");
         driver.get("https://opensource-demo.orangehrmlive.com/");
         Thread.sleep(3000);
+        System.out.println("Enter Usr name");
         driver.findElement(By.id("txtUsername")).sendKeys("Admin");
+        System.out.println("Enter password");
         driver.findElement(By.id("txtPassword")).sendKeys("admin123");
         driver.findElement(By.id("btnLogin")).click();
+        System.out.println("Submitted");
         Thread.sleep(4000);        
         System.out.println("Title of the page is: " + driver.getTitle());
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("OrangeHRM"));
