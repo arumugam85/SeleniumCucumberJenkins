@@ -25,7 +25,7 @@ public class SeleniumDemo {
         driver.findElement(By.id("txtUsername")).sendKeys("Admin");
         driver.findElement(By.id("txtPassword")).sendKeys("admin123");
         driver.findElement(By.id("btnLogin")).click();
-        Thread.sleep(3000);        
+        Thread.sleep(4000);        
         System.out.println("Title of the page is: " + driver.getTitle());
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("OrangeHRM"));
         driver.quit();
