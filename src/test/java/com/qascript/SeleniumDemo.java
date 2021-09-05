@@ -30,7 +30,7 @@ public class SeleniumDemo {
 		else if (browser.contains("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-			System.out.println("Launch Edge Browser");
+			System.out.println("****Launch Edge Browser*******");
 		}
 
 		else if (browser.isEmpty()) {
@@ -45,7 +45,7 @@ public class SeleniumDemo {
 		driver.manage().window().maximize();
 		System.out.println("************Launch OHRM Application**************");
 		driver.get("https://opensource-demo.orangehrmlive.com/");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		System.out.println("************Enter User name************");
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
