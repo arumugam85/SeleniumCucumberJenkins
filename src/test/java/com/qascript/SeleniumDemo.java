@@ -1,11 +1,12 @@
 package com.qascript;
 
-import org.junit.Assert;
-import org.junit.Test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -31,8 +32,9 @@ public class SeleniumDemo {
         System.out.println("Submitted");
         Thread.sleep(4000);        
         System.out.println("Title of the page is: " + driver.getTitle());
-        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("OrangeHRM"));
+        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
         driver.quit();
+        System.out.println("Browser closed");
     }
 
 
