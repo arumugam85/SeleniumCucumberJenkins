@@ -21,12 +21,7 @@ public class SeleniumDemo {
 		System.out.println("Parameter Name is " + browser);
 		WebDriver driver = null;
 
-		if (browser.contains("Chrome")) {
-			ChromeOptions chromeOptions = new ChromeOptions();
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(chromeOptions);
-			System.out.println("Launch Chrome Browser");
-		} else if (browser.contains("FireFox")) {
+		if (browser.contains("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			System.out.println("Launch FF Browser");
@@ -36,6 +31,15 @@ public class SeleniumDemo {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			System.out.println("Launch Edge Browser");
+		}
+
+		else if (browser.isEmpty()) {
+
+			ChromeOptions chromeOptions = new ChromeOptions();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(chromeOptions);
+			System.out.println("Launch default Chrome Browser");
+
 		}
 
 		driver.manage().window().maximize();
