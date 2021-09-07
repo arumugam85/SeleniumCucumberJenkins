@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21653" started-at="2021-09-07T19:47:36Z" finished-at="2021-09-07T19:47:57Z">
+  <suite name="Default suite" duration-ms="38244" started-at="2021-09-07T20:30:03Z" finished-at="2021-09-07T20:30:41Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="21653" started-at="2021-09-07T19:47:36Z" finished-at="2021-09-07T19:47:57Z">
+    <test name="Default test" duration-ms="38244" started-at="2021-09-07T20:30:03Z" finished-at="2021-09-07T20:30:41Z">
       <class name="testRunner.RunnerTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="setUpClass" is-config="true" duration-ms="608" started-at="2021-09-07T15:47:36Z" finished-at="2021-09-07T15:47:36Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="setUpClass" is-config="true" duration-ms="2153" started-at="2021-09-07T16:30:03Z" finished-at="2021-09-07T16:30:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="runScenario" duration-ms="20785" started-at="2021-09-07T15:47:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-07T15:47:57Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="runScenario" duration-ms="35112" started-at="2021-09-07T16:30:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-07T16:30:40Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="setup" is-config="true" duration-ms="5" started-at="2021-09-07T15:47:57Z" finished-at="2021-09-07T15:47:57Z">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="setup" is-config="true" duration-ms="20" started-at="2021-09-07T16:30:40Z" finished-at="2021-09-07T16:30:40Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[gherkin/formatter/Reporter]]>
@@ -89,7 +89,7 @@ Caused by: java.lang.ClassNotFoundException: gherkin.formatter.Reporter
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="tearDownClass" is-config="true" duration-ms="202" started-at="2021-09-07T15:47:57Z" finished-at="2021-09-07T15:47:57Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.RunnerTest@6e1ec318]" name="tearDownClass" is-config="true" duration-ms="800" started-at="2021-09-07T16:30:40Z" finished-at="2021-09-07T16:30:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

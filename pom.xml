@@ -68,12 +68,14 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.0.8</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>gherkin</artifactId>
-			<version>21.0.0</version>
+			<version>3.2.0</version>
 		</dependency>
+
 
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->

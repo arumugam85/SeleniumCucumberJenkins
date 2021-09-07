@@ -2,5 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
+    <classes>
+   <class name ="testRunner.RunnerTest"></class>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

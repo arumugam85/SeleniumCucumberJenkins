@@ -1,6 +1,4 @@
 #Author: arumugam
-#Feature: Login to the OHRM Application
-@login
 Feature: Login to the OHRM Application
 
   @login
