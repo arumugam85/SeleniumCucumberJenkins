@@ -17,8 +17,6 @@ public class LoginPage {
 	By btnLogin = By.id("btnLogin");
 	By btnLogOut = By.linkText("Logout");
 
-
-
 	public void setUserName(String email) {
 		driver.findElement(txtUsername).clear();
 		driver.findElement(txtUsername).sendKeys(email);
